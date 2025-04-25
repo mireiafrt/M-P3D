@@ -126,7 +126,7 @@ def main():
     # Noted by lzh : official mmdetection code change to use 'auto_sclae_lr'.
     # TODO: We need to check whether it's as same as 'autoscale_lr'
     if args.autoscale_lr:
-        Warnings.warn('autoscale_lr will be deprecated, please see tools/train.py and use auto_scale_lr.'
+        warnings.warn('autoscale_lr will be deprecated, please see tools/train.py and use auto_scale_lr.'
                       'Here the auto_scale_lr is set True instead.')
         args.auto_scale_lr = True
     '''

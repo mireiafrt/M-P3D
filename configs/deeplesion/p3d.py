@@ -5,7 +5,8 @@ _base_ = [
 ]
 fp16 = dict(loss_scale=dict(init_scale=512))
 #pretrained="/lung_general_data/pretrained_model/mp3d/mp3d63-d720bda1.pth"
-pretrained="/mnt/LungGeneralDataNFS/pretrained_model/mp3d/mp3d63-d720bda1.pth"
+#pretrained="/mnt/LungGeneralDataNFS/pretrained_model/mp3d/mp3d63-d720bda1.pth"
+pretrained="pretrained_model/p3d/res3d18_imagenet_BN_73.07-5ff2ecb7.pth"
 model = dict(
     type='FasterRCNN',
     backbone=dict(
